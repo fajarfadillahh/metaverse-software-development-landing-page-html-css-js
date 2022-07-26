@@ -85,8 +85,9 @@ img {
 
   &-subtitle {
     font-size: 15px;
-    font-weight: $font-medium;
+    font-weight: $font-semibold;
     color: $purple-color;
+    margin-bottom: $margin-0-5;
   }
 
   &-title {
@@ -267,6 +268,49 @@ img {
 
     &-img {
       width: 90px;
+    }
+  }
+}
+
+// ===== FEATURES SECTION =====
+.features {
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 0.8fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content {
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+
+    &-img {
+      width: 90px;
+      justify-self: center;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: $margin-1;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
     }
   }
 }
