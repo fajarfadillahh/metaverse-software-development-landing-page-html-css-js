@@ -482,3 +482,15 @@ img {
     }
   }
 }
+
+// ===== CUSTOMER SECTION =====
+.customer {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__img,
+  &__data {
+    justify-self: center;
+  }
+}
