@@ -83,6 +83,12 @@ img {
 .section {
   padding: 8rem 0 4rem;
 
+  &-subtitle {
+    font-size: 15px;
+    font-weight: $font-medium;
+    color: $purple-color;
+  }
+
   &-title {
     font-size: 24px;
     font-weight: $font-semibold;
