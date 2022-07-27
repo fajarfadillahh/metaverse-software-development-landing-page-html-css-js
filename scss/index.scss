@@ -788,3 +788,31 @@ img {
     width: 500px;
   }
 }
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__list {
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
