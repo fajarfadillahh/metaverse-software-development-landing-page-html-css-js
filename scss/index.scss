@@ -836,6 +836,10 @@ img {
       align-items: center;
     }
 
+    &__form {
+      margin: 0 0 $margin-2;
+    }
+
     &__data,
     &__sponsors {
       text-align: left;
