@@ -560,3 +560,16 @@ img {
     }
   }
 }
+
+// ===== CONTACT SECTION =====
+.contact {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data,
+  &__button {
+    text-align: center;
+    justify-self: center;
+  }
+}
