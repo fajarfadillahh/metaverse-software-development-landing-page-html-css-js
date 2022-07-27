@@ -573,3 +573,127 @@ img {
     justify-self: center;
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  padding: 8rem 0 2rem;
+
+  &__container {
+    gap: 7rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+  }
+
+  &__data {
+    &-logo {
+      font-size: 18px;
+      font-weight: $font-semibold;
+      color: $black-color;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      margin: 0.5rem 0 1rem;
+    }
+
+    &-sosmed {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-social {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      width: 45px;
+      height: 45px;
+      border: 2px solid rgba($color: #000000, $alpha: 0.1);
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: $purple-color;
+      transition: $transition-400;
+
+      &:hover {
+        border-color: $purple-color;
+        background-color: $purple-color;
+        color: $white-color;
+      }
+    }
+  }
+
+  &__content {
+    &-title {
+      font-size: 18px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: $margin-1-5;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    &-link {
+      font-size: 15px;
+      color: $grey-color;
+
+      &:hover {
+        color: $purple-color;
+        text-decoration: underline;
+      }
+    }
+
+    &-form {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-input {
+      height: 50px;
+      display: flex;
+      padding: 1rem;
+      background-color: rgba($color: #000000, $alpha: 0.05);
+      border-radius: 10px;
+      font-size: 15px;
+      color: $black-color;
+      font-weight: $font-medium;
+
+      &::placeholder {
+        font-size: 15px;
+        font-weight: $font-medium;
+        color: $grey-color;
+      }
+    }
+
+    &-button {
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background-color: $purple-color;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      color: $white-color;
+    }
+  }
+
+  &__copy {
+    padding-top: 2rem;
+    border-top: 2px solid rgba($color: #000000, $alpha: 0.05);
+    text-align: center;
+    font-size: 15px;
+    color: $grey-color;
+  }
+}
