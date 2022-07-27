@@ -938,3 +938,18 @@ img {
   background-color: rgba($color: #8d448b, $alpha: 0.8);
   color: $white-color;
 }
+
+// ===== SCROLLBAR =====
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+
+  &-thumb {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}
