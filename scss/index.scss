@@ -730,3 +730,21 @@ img {
     bottom: 3rem;
   }
 }
+
+// ===== MEDIA QUERIES =====
+@media screen and (min-width: 480px) {
+  .home__data,
+  .boost__data,
+  .video__data,
+  .customer__data,
+  .contact__data {
+    width: 400px;
+  }
+
+  .home__img,
+  .boost__img,
+  .video__wrapper,
+  .customer__img {
+    width: 400px;
+  }
+}
