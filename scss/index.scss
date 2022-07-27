@@ -932,3 +932,9 @@ img {
     }
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: rgba($color: #8d448b, $alpha: 0.8);
+  color: $white-color;
+}
