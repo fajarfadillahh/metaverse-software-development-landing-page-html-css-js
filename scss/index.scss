@@ -494,3 +494,69 @@ img {
     justify-self: center;
   }
 }
+
+// ===== BLOG SECTION =====
+.blog {
+  &__bg {
+    padding: 5rem 0;
+    background-color: #f6f8fb;
+  }
+
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content {
+    overflow: hidden;
+    background-color: $white-color;
+    border-radius: 10px;
+    transition: $transition-400;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba($color: #000000, $alpha: 0.1);
+      transform: translateY(-4px);
+      cursor: pointer;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-data {
+      padding: 1rem;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      line-height: $leading-title;
+      margin-bottom: $margin-1;
+    }
+
+    &-comments {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      color: $grey-color;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.5rem;
+    }
+  }
+}
