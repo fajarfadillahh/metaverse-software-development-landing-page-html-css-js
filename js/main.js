@@ -11,6 +11,18 @@ function showMenu(menuId, toggleId) {
 }
 showMenu("header-menu", "header-toggle");
 
+// ===== STICKY HEADER =====
+const scrollY = window.pageYOffset;
+
+function stickyHeader() {
+  const header = document.getElementById("header");
+
+  this.scrollY > 5
+    ? header.classList.add("sticky-action")
+    : header.classList.remove("sticky-action");
+}
+window.addEventListener("scroll", stickyHeader);
+
 // ===== TESTIMONIAL SWIPER =====
 let swiper = new Swiper(".testimonial-swiper", {
   centeredSlides: true,
